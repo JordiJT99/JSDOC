@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Avanzada con Historial</title>
+    <!--
+        Este archivo HTML define una interfaz para una calculadora avanzada que permite realizar
+        operaciones básicas como suma, resta, multiplicación y división.
+        También incluye un historial para mostrar las operaciones realizadas.
+    -->
+</head>
+<body>
+    <!-- Título principal de la página -->
+    <h1>Calculadora Avanzada</h1>
+    
+    <!-- Formulario para ingresar los números y seleccionar la operación -->
+    <form id="calculatorForm">
+        <!-- Campo para el primer número -->
+        <label for="num1">Número 1:</label>
+        <input type="number" id="num1" name="num1" required>
+        <br>
+
+        <!-- Campo para el segundo número -->
+        <label for="num2">Número 2:</label>
+        <input type="number" id="num2" name="num2" required>
+        <br>
+
+        <!-- Menú desplegable para seleccionar la operación -->
+        <label for="operation">Operación:</label>
+        <select id="operation" name="operation">
+            <option value="add">Suma</option>
+            <option value="subtract">Resta</option>
+            <option value="multiply">Multiplicación</option>
+            <option value="divide">División</option>
+        </select>
+        <br>
+
+        <!-- Botón para realizar el cálculo -->
+        <button type="submit">Calcular</button>
+    </form>
+
+    <!-- Sección para mostrar el resultado -->
+    <h2>Resultado:</h2>
+    <p id="result">Aquí aparecerá el resultado</p>
+
+    <!-- Sección para mostrar el historial de operaciones -->
+    <h2>Historial</h2>
+    <ul id="history">
+        <!-- Aquí se añadirán las operaciones realizadas -->
+    </ul>
+
+    <!-- Inclusión del archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
